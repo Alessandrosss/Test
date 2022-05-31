@@ -3,4 +3,4 @@ This is a test
 
 This is another Test
 
-(Link Test)[www.google.de]
+[Link Test](www.google.de)
