@@ -1,0 +1,189 @@
+/* #carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h2 {
+        margin: 3rem 0;
+    }
+    .carousel__container {
+        height: clamp(320px, 650px, 100%);
+        width: clamp(350px, 800px, 100%);
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        .carousel__slide {
+            display: flex;
+            width: auto;
+            height: auto;
+            .carousel__slide-card {
+                width: max(350px, 800px);
+                img {
+                    //width: 800px;
+                    //height: 400px; 
+                    object-fit: fill;
+                    width: max(350px, 800px);
+                    height: 400px;
+                }
+                .carousel__slide-card__title {
+                    text-shadow: 1px 1px 6px #000;
+                    margin: 1rem auto;
+                }
+            }
+        }
+    }
+    #prevBtn {
+        position: absolute;
+        top: 45%;
+        left: 2%;
+        transform: translate(-2%, -45%);
+    }
+    #nextBtn {
+        position: absolute;
+        top: 45%;
+        right: 2%;
+        transform: translate(-2%, -45%);
+    }
+} */
+
+#carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    row-gap: 2rem;
+    width: 100%;
+    height: auto;
+    .lightBox {
+        display: none;
+        background: rgba(0, 0, 0, 0.9);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .lightBox.live {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 2rem;
+        z-index: 1000;
+        .img_lightbox {
+            max-width: 80%;
+            max-height: 70%;
+            opacity: 1;
+            z-index: 9999;
+        }
+        #closeLightBox {
+            background-image: url('../bilder/close-svgrepo-com.svg');
+            display: block;
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            width: 24px;
+            height: 24px;
+            border-radius: 0;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 1rem;
+            background-color: #fff;
+            box-shadow: 0 0 8px silver;
+            z-index: 99999;
+        }
+    }
+    .carousel_wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: clamp(320px, 100%, 800px);
+        height: clamp(270px, 100%, 650px);
+        #prev {
+            position: relative;
+            top: 50%;
+            left: 5%;
+            transform: translate(-5%, -50%);
+            background: none;
+        }
+        #next {
+            position: relative;
+            z-index: 999;
+            top: 50%;
+            right: 5%;
+            transform: translate(5%, -50%);
+            background: none;
+        }
+        #prev,
+        #next {
+            padding: 1rem;
+            background-color: #fff;
+            opacity: 0.7;
+            img {
+                width: 22px;
+                height: 22px;
+            }
+        }
+        .currentImg {
+            width: 100%;
+            max-height: 400px;
+            box-shadow: 0 0 16px silver;
+            cursor: pointer;
+        }
+    }
+    .carousel_controls {
+        max-width: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 1rem;
+        padding: 1rem 1.5rem;
+        border-radius: 8px;
+        background-color: #fff;
+        opacity: 0.7;
+        .carousel_counter {
+            color: var(--fontColor-contrast);
+        }
+        .carousel_controls_buttons {
+            column-gap: 30px;
+            button .pause {
+                padding: 0.5rem;
+            }
+            button .play {
+                padding: 0.5rem;
+            }
+        }
+        a {
+            color: var(--fontColor-contrast);
+        }
+        .lightBoxTitle {
+            padding: 3rem auto;
+        }
+    }
+    .carousel_thumbnails {
+        max-width: 800px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 24px;
+        .thumbnail {
+            cursor: pointer;
+            width: 160px;
+            height: 80px;
+        }
+    }
+    .hidden {
+        display: none;
+        opacity: 0;
+    }
+    .active {
+        box-shadow: 0 0 16px silver;
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}

@@ -1,0 +1,222 @@
+@import url(./carousel.css);
+@import url(./footer.css);
+@import url(./jobportal.css);
+@import url(./media-scroller.css);
+@import url(./navbar.css);
+@import url(./questionsBox.css);
+@import url(./title-page.css);
+@import url(./sidebar.css);
+@import url(./validator.css);
+@import url(./vCard.css);
+@import url(./hero.css);
+:root {
+  --primaryColor: #4A3DE0;
+  --background: #03045e;
+  --backgroundLighter: #0e1075;
+  --background-glas: rgba(204, 204, 204, 0.2);
+  --fontColor: #fff;
+  --fontColor-contrast: #1c1c1c;
+  --contrast: #f6f5ff;
+  --radius: .5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: var(--fontColor);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 112.5%;
+}
+
+body {
+  width: 100vw;
+  position: absolute;
+  font-weight: 400;
+  line-height: 1.3;
+  scroll-behavior: smooth;
+  background-color: var(--background);
+}
+
+body a {
+  font-size: 0.8rem;
+}
+
+body a:hover {
+  text-decoration: underline;
+}
+
+body button {
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  background-color: #555;
+  color: var(--white);
+  padding: .5rem 1.75rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body button a:hover {
+  text-decoration: none;
+}
+
+body .cb-button {
+  background-color: var(--primaryColor);
+  border: 1px solid var(--contrast);
+}
+
+body .sub-button {
+  background-color: #fff;
+  color: var(--primaryColor);
+  border: 1px solid var(--primaryColor);
+}
+
+body .cntrl-button {
+  width: 16px;
+  height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 99;
+  border: none;
+  background-color: #fff;
+  color: var(--fontColor-contrast);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+
+body .social-icons {
+  width: 22px;
+  height: 22px;
+  position: relative;
+  top: 0.3125rem;
+  margin-right: 0.625rem;
+}
+
+body .back-to-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3rem;
+  width: 3rem;
+  position: relative;
+  left: 95%;
+  -webkit-transform: translateX(-95%);
+          transform: translateX(-95%);
+  background-color: #4367c2;
+  color: #fff;
+  border-radius: 100%;
+  margin-bottom: 3rem;
+}
+
+body h1 {
+  font-size: 2.488rem;
+  font-weight: 400;
+}
+
+body h2 {
+  font-size: 2.074rem;
+  font-weight: 400;
+}
+
+body h3 {
+  font-size: 1.728rem;
+  font-weight: 400;
+}
+
+body h4 {
+  font-size: 1.44rem;
+  font-weight: 400;
+}
+
+body p {
+  font-size: 1rem;
+  max-width: 50ch;
+  font-weight: 200;
+  margin: 0 auto;
+  padding: 1.5rem .5rem;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  float: right;
+  row-gap: 2rem;
+  padding-top: 4rem;
+  overflow: hidden;
+}
+
+body .wrapper {
+  min-height: 90vh;
+  width: 100%;
+}
+
+body .learnMore {
+  text-decoration: underline;
+  text-align: center;
+}
+
+@media (max-width: 810px) {
+  main {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 390px) {
+  * {
+    font-size: 100%;
+  }
+  h1 {
+    font-size: 2.488rem;
+    font-weight: 400;
+  }
+  h2 {
+    font-size: 2.074rem;
+    font-weight: 400;
+  }
+  h3 {
+    font-size: 1.728rem;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 1.44rem;
+    font-weight: 400;
+  }
+  p {
+    max-width: 50ch;
+    font-weight: 200;
+    margin: 0 auto;
+    padding: 1.5rem .5rem;
+  }
+}
+/*# sourceMappingURL=allgemein.css.map */

@@ -1,0 +1,25 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    column-gap: 1rem;
+    row-gap: 2rem;
+    padding: 60px 20px;
+    width: 100%;
+    .footer-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-width: max-content;
+        padding: 40px;
+        a {
+            padding: 0.625rem 0;
+            color: var(--fontColor);
+        }
+    }
+}

@@ -1,0 +1,94 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: var(--background);
+    width: 100%;
+    height: 4rem;
+    padding-left: 15%;
+    padding-right: 2rem;
+    z-index: 1000;
+    //box-shadow: 0 0 8px silver;
+    .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+        font-variant-caps: all-petite-caps;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .toggle-button,
+    .close-toggle-button {
+        display: none;
+    }
+    .hidden {
+        display: none;
+        opacity: 0;
+    }
+}
+
+@media (max-width: 810px) {
+    nav {
+        padding: 2rem;
+        .cb-button {
+            display: none;
+        }
+        .dropdown {
+            position: fixed;
+            right: 2rem;
+            top: 1rem;
+            padding: 1rem;
+            background-color: #fff;
+            min-width: 55%;
+            min-height: fit-content;
+            display: grid;
+            place-items: center;
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                li {
+                    text-align: center;
+                    padding: 1rem .5rem;
+                    width: 70%;
+                    a {
+                        color: var(--fontColor-contrast);
+                    }
+                }
+                li:hover {
+                    background-color: silver;
+                }
+            }
+            .cb-button {
+                display: block;
+            }
+        }
+        .toggle-button,
+        .close-toggle-button {
+            display: block;
+            width: 24px;
+            height: 24px;
+            border-radius: 0;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 1rem;
+            background-color: #fff;
+            box-shadow: 0 0 8px silver;
+            z-index: 999;
+        }
+        .toggle-button {
+            background-image: url('../bilder/hamburger-menu-svgrepo-com.svg');
+        }
+        .close-toggle-button {
+            background-image: url('../bilder/close-svgrepo-com.svg');
+        }
+        .hidden {
+            display: none;
+            opacity: 0;
+        }
+    }
+}

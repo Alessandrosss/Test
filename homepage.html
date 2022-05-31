@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./lib/assets/allgemein.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="./lib/js/hero.js" defer></script>
+    <script src="https://kit.fontawesome.com/1bf0c54c21.js" crossorigin="anonymous"></script>
+    <script src="./lib/js/burgerMenu.js" defer></script>
+    <script src="./lib/js/carousel.js" defer></script>
+    <script src="./lib/js/validator.js" defer></script>
+    <title>Homepage</title>
+</head>
+
+<body>
+    <nav>
+        <a class="logo" href="./homepage.html">
+            InsAusland
+        </a>
+
+        <div class="navbar-links">
+            <ul>
+                <li><a href="homepage.html">Homepage</a></li>
+                <li><a href="alternativen.html">Alternativen</a></li>
+                <li><a href="faqs.html">FAQS</a></li>
+            </ul>
+        </div>
+
+        <button class="btn cb-button" type="button"><a href="#validator">Anmeldung</a></button>
+        <button class="toggle-button" id="burger-menu" type="button" name="burger-menu"></button>
+        <button class="close-toggle-button hidden" id="close-burger-menu" type="button" name="close-burger-menu"></button>
+    </nav>
+
+    <main>
+        <div class="logo-animation">
+            <div class="logo-container">
+                <svg width="152" height="151" viewBox="0 0 152 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.546631 1.28912C6.96161 50.7162 4.82129 100.143 0.546631 149.57C9.56921 142.833 16.9858 135.873 33 131C31.92 73.1155 49.2209 38.6138 0.546631 1.28912Z"
+                  fill="transparent"
+                  stroke="black"
+                  stroke-width="0.5"
+                  data-color="1"
+                />
+                <path
+                  d="M135.374 150C123.715 98.8871 176.284 43.3037 134.736 2C105.458 45.1639 35.4407 78.3573 35 131C144.756 11.4855 50.0737 149.342 135.374 150Z"
+                  fill="transparent"
+                  stroke="black"
+                  stroke-width="0.5"
+                  data-color="2"
+                />
+              </svg>
+            </div>
+        </div>
+        <div id="hero-container" class="wrapper">
+            <div class="container">
+                <h1>Welcome to the <span> Homepage!</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <a href="#" class="btn-hero btn-element">Learn more</a>
+            </div>
+            <div class="circle"></div>
+        </div>
+
+        <section class="wrapper" id="title-page">
+            <div class="title-page__box">
+                <div class="title-page__det">
+                    <h1>Sei Bereit Fürs Ausland!</h1>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                    </p>
+
+                    <button class="btn cb-button" type="button"><a href="#validator">Anmeldung</a></button>
+                </div>
+                <img class="title-page__img" src="./lib/bilder/undraw_world_re_768g.svg" alt="#" srcset="">
+            </div>
+        </section>
+
+
+        <section class="wrapper" id="carousel">
+            <div class="lightBox"></div>
+            <h2>Entdeck die Umgebung</h2>
+            <div class="carousel_wrapper">
+                <button class="cntrl-button" type="button" id="prev"><img src="./lib/bilder/left-arrow-arrows-svgrepo-com.svg" alt=""></button>
+                <img class="currentImg" src="" alt="Bildgalerie" />
+                <button class="cntrl-button" type="button" id="next"><img src="./lib/bilder/right-arrow-arrows-svgrepo-com.svg" alt=""></button>
+            </div>
+            <div class="carousel_controls">
+                <span class="carousel_counter"></span>
+                <div class="carousel_controls_buttons">
+                    <button class="pause">||</button>
+                    <button class="play hidden">▶︎</button>
+                </div>
+            </div>
+            <div class="carousel_thumbnails"></div>
+        </section>
+
+        <section class="wrapper" id="jobportal">
+            <h2>Der Auslandsjob Branchen-Guide</h2>
+            <div class="jobportal__grid">
+                <div class="bubble">
+                    <img src="./lib/bilder/manager-svgrepo-com.svg" alt="" srcset="" />
+                    <a href="#" class="learnMore">Finanzen & Marketing &#10555;</a>
+                </div>
+                <div class="bubble">
+                    <img src="./lib/bilder/Medizin%20und%20Pflege.svg" alt="" srcset="" />
+                    <a href="#" class="learnMore">Medizin & Pflege &#10555;</a>
+                </div>
+                <div class="bubble">
+                    <img src="./lib/bilder/Medien%20und%20Kommunication.svg" alt="" srcset="" />
+                    <a href="#" class="learnMore">Medien, Kommunication &#10555;</a>
+                </div>
+                <div class="bubble">
+                    <img src="./lib/bilder/Jura%20und%20Recht.svg" alt="" srcset="" />
+                    <a href="#" class="learnMore">Jura & Recht &#10555;</a>
+                </div>
+                <div class="bubble">
+                    <img src="./lib/bilder/Gastronomie.svg" alt="" srcset="" />
+                    <a href="#" class="learnMore">Gatronomie &#10555;</a>
+                </div>
+                <div class="bubble">
+                    <img src="./lib/bilder/Bau%20und%20Immobilien.svg" alt="" srcset="" />
+                    <a href="#" class="learnMore">Bau und Immobilien &#10555;</a>
+                </div>
+                <div class="bubble">
+                    <img src="./lib/bilder/Beauty%20und%20Wellness.svg" alt="" srcset="" />
+                    <a href="#" class="learnMore">Beauty & Wellness &#10555;</a>
+                </div>
+                <div class="bubble">
+                    <img src="./lib/bilder/gardener-professions-and-jobs-svgrepo-com.svg" alt="" srcset="" />
+                    <a href="#" class="learnMore">Natur & Umwelt  &#10555;</a>
+                </div>
+                <div class="bubble">
+                    <img src="./lib/bilder/electrician-svgrepo-com.svg" alt="" srcset="" />
+                    <a href="#" class="learnMore">Energie &#10555;</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="wrapper" id="media-scroller">
+            <h3>Alternativen &#10233;</h3>
+            <div class="media-element">
+                <img src="lib/bilder/auslandspraktikum.jpg" alt="">
+                <p class="media-element__details">Auslandspraktikum</p>
+                <a href="#" class="learnMore">Mehr erfahren &#10555;</a>
+
+            </div>
+            <div class="media-element">
+                <img src="lib/bilder/kyle-smith-XMGaBN4fM58-unsplash-min.jpg" alt="">
+                <p class="media-element__details">Summercamp-Job</p>
+                <a href="#" class="learnMore">Mehr erfahren &#10555;</a>
+
+            </div>
+            <div class="media-element">
+                <img src="lib/bilder/au-pair.jpg" alt="">
+                <p class="media-element__details">Au Pair</p>
+                <a href="#" class="learnMore">Mehr erfahren &#10555;</a>
+
+            </div>
+            <div class="media-element">
+                <img src="lib/bilder/freiwilligarbeit.jpg" alt="">
+                <p class="media-element__details">Freiwilligenarbeit</p>
+                <a href="#" class="learnMore">Mehr erfahren &#10555;</a>
+
+            </div>
+            <div class="media-element">
+                <img src="lib/bilder/sprachreisen.jpg" alt="">
+                <p class="media-element__details">Sprachreisen</p>
+                <a href="#" class="learnMore">Mehr erfahren &#10555;</a>
+
+            </div>
+            <div class="media-element">
+                <img src="lib/bilder/evangeline-shaw-VLkoOabAxqw-unsplash-min.jpg" alt="">
+                <p class="media-element__details">Hotelarbeit</p>
+                <a href="#" class="learnMore">Mehr erfahren &#10555;</a>
+
+            </div>
+        </section>
+
+        <section class="wrapper" id="validator">
+            <form class="form" id="createAccount">
+                <h3 class="form__title">Community beitreten!</h3>
+                <div class="form__field">
+                    <input type="text" id="signupUsername" class="form__input" autocomplete="off" placeholder="Username">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__field" id="radioButtons">
+                    <input type="radio" autocomplete="off" name="gender" value="x">
+                    <label for="maskulin">Maskulin</label>
+
+                    <input type="radio" autocomplete="off" name="gender" value="y">
+                    <label for="feminin">Feminin</label>
+
+                    <input type="radio" autocomplete="off" name="gender" value="z">
+                    <label for="k.A.">Keine Angabe</label>
+                </div>
+                <div class="form__field">
+                    <input type="text " id="signupEmail" class="form__input" autocomplete="off" placeholder="Email Adresse ">
+                    <div class="form__input-error-message "></div>
+                </div>
+                <div class="form__field">
+                    <input type="text" maxlength="15" id="signupPhoneNumber" class="form__input " autocomplete="off" placeholder="Phone Number" onkeypress="if( isNaN(String.fromCharCode(event.keyCode))) return false;">
+                    <div class="form__input-error-message "></div>
+                </div>
+
+                <div class="form__field">
+                    <input type="password " id="signupPassword" class="form__input" autocomplete="off" placeholder="Password ">
+                    <div class="form__input-error-message "></div>
+                </div>
+                <div class="form__field">
+                    <input type="password " id="signupConfirmPassword" class="form__input" autocomplete="off" placeholder="Confirm Password ">
+                    <div class="form__input-error-message "></div>
+                </div>
+
+                <div class="form__field" id="checkboxs">
+                    <input type="checkbox" name="policies" autocomplete="off" value="">
+                    <label for="checkbox">(*) Ich akzeptiere die <a href="./datenschutzerklaerung.html">Datenschutzerkärung</a></label>
+                    <div class="form__input-error-message"></div>
+
+                    <input type="checkbox" name="policies" autocomplete="off" value="">
+                    <label for="checkbox">Newsletter</label>
+                </div>
+
+                <button class="form__button cb-button" type="submit ">Konto erstellen</button>
+            </form>
+        </section>
+
+        <a href="#title-page" class="back-to-top">&#8679;</a>
+    </main>
+    <footer>
+        <div class="footer-section">
+            <h4>KONTAKT</h4>
+            <a href="#">24/7 Support</a>
+            <a href="#">kontakt@support.com</a>
+            <a href="#">+49 1234-5678-910</a>
+        </div>
+        <div class="footer-section">
+            <h4>SOCIAL-MEDIA</h4>
+            <a href="#"><img class="social-icons" src="lib/bilder/facebook-svgrepo-com%20(1).svg" alt="">insAusland</a>
+            <a href="#"><img class="social-icons" src="lib/bilder/twitter-svgrepo-com.svg" alt="">insAusland</a>
+            <a href="#"><img class="social-icons" src="lib/bilder/youtube-svgrepo-com.svg" alt="">insAusland</a>
+        </div>
+        <div class="footer-section">
+            <h4>MEHR DAZU</h4>
+            <a href="./impressum.html">Impressum</a>
+            <a href="./datenschutzerklaerung.html">Datenschutzerklärung</a>
+            <a href="#"><img class="social-icons" src="./lib/bilder/copyright-svgrepo-com.svg" alt="">Copyright</a>
+        </div>
+    </footer>
+</body>
+
+</html>

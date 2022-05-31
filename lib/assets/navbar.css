@@ -1,0 +1,118 @@
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: var(--background);
+  width: 100%;
+  height: 4rem;
+  padding-left: 15%;
+  padding-right: 2rem;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-variant-caps: all-petite-caps;
+}
+
+nav .logo:hover {
+  text-decoration: none;
+}
+
+nav .toggle-button,
+nav .close-toggle-button {
+  display: none;
+}
+
+nav .hidden {
+  display: none;
+  opacity: 0;
+}
+
+@media (max-width: 810px) {
+  nav {
+    padding: 2rem;
+  }
+  nav .cb-button {
+    display: none;
+  }
+  nav .dropdown {
+    position: fixed;
+    right: 2rem;
+    top: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    min-width: 55%;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  nav .dropdown ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  nav .dropdown ul li {
+    text-align: center;
+    padding: 1rem .5rem;
+    width: 70%;
+  }
+  nav .dropdown ul li a {
+    color: var(--fontColor-contrast);
+  }
+  nav .dropdown ul li:hover {
+    background-color: silver;
+  }
+  nav .dropdown .cb-button {
+    display: block;
+  }
+  nav .toggle-button,
+  nav .close-toggle-button {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1rem;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 8px silver;
+            box-shadow: 0 0 8px silver;
+    z-index: 999;
+  }
+  nav .toggle-button {
+    background-image: url("../bilder/hamburger-menu-svgrepo-com.svg");
+  }
+  nav .close-toggle-button {
+    background-image: url("../bilder/close-svgrepo-com.svg");
+  }
+  nav .hidden {
+    display: none;
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */

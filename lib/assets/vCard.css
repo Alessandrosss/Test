@@ -1,0 +1,123 @@
+#alternativen h2 {
+  text-align: center;
+}
+
+#alternativen .vCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4rem auto;
+}
+
+#alternativen .vCard img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0.3125rem;
+  margin-bottom: 2rem;
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 100%;
+  -webkit-box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.479);
+          box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.479);
+  position: relative;
+  top: 3rem;
+}
+
+#alternativen .vCard .vCard__message {
+  background-color: #fff;
+  border-radius: var(--radius);
+  width: 400px;
+  position: relative;
+  padding: 1.25rem 3rem;
+}
+
+#alternativen .vCard .vCard__message h3 {
+  color: var(--fontColor-contrast);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#alternativen .vCard .vCard__message p {
+  font-style: italic;
+  color: var(--fontColor-contrast);
+  margin: 0;
+  padding: 0;
+}
+
+#alternativen .vCard .vCard__message::before {
+  content: "";
+  position: absolute;
+  top: 70%;
+  left: -2%;
+  -webkit-transform: rotateX(170deg);
+          transform: rotateX(170deg);
+  border: 1.25rem solid transparent;
+  border-top-color: #fff;
+  border-bottom: 0;
+}
+
+#alternativen .vCard .vCard__box {
+  width: clamp(450px, 40%, 100%);
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 16px rgba(255, 254, 254, 0.65);
+          box-shadow: 0px 0px 16px rgba(255, 254, 254, 0.65);
+  border-radius: var(--radius);
+  padding: 1rem 2rem;
+}
+
+#alternativen .vCard .vCard__box p {
+  margin: 0;
+  padding: 1rem 0;
+}
+
+#alternativen .vCard .vCard__box .learnMore {
+  float: right;
+}
+
+#alternativen .vCard:nth-child(2n+1) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+#alternativen .vCard:nth-child(2n+1) .vCard__message::before {
+  content: "";
+  position: absolute;
+  top: 70%;
+  left: 92%;
+  -webkit-transform: rotateX(170deg);
+          transform: rotateX(170deg);
+  border: 1.25rem solid transparent;
+  border-top-color: #fff;
+  border-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  #alternativen .vCard .vCard__message::before {
+    top: -5%;
+    left: 30%;
+    -webkit-transform: rotateX(170deg);
+            transform: rotateX(170deg);
+  }
+  #alternativen .vCard:nth-child(2n+1) .vCard__message::before {
+    top: -5%;
+    left: 30%;
+    -webkit-transform: rotateX(170deg);
+            transform: rotateX(170deg);
+  }
+}
+/*# sourceMappingURL=vCard.css.map */

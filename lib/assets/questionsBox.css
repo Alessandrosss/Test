@@ -1,0 +1,79 @@
+#questionsBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 90%;
+  padding-bottom: 2rem;
+  -webkit-box-shadow: 0px 0px 16px rgba(255, 254, 254, 0.65);
+          box-shadow: 0px 0px 16px rgba(255, 254, 254, 0.65);
+}
+
+#questionsBox h2 {
+  margin: 2rem auto;
+}
+
+#questionsBox .faq {
+  max-width: 550px;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-bottom: 2px solid #fff;
+  cursor: pointer;
+}
+
+#questionsBox .faq .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#questionsBox .faq .question h3 {
+  padding-right: 1rem;
+  font-size: 1.3rem;
+}
+
+#questionsBox .faq .arrow {
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+#questionsBox .faq .answer {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 1s ease;
+  transition: max-height 1s ease;
+}
+
+#questionsBox .faq p {
+  margin: 0;
+  padding-top: 1rem;
+  line-height: 1.5;
+}
+
+#questionsBox .faq:hover {
+  background-color: var(--backgroundLighter);
+}
+
+#questionsBox .faq.active .answer {
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+
+#questionsBox .faq.active .arrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+/*# sourceMappingURL=questionsBox.css.map */

@@ -1,0 +1,56 @@
+#title-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  padding: 2rem;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+
+#title-page .title-page__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
+  row-gap: 3rem;
+  padding: 6rem 0.5rem;
+  background-color: var(--background-glas);
+  border-radius: var(--radius);
+}
+
+#title-page .title-page__box .title-page__img {
+  width: clamp(350px, 500px, 100%);
+  height: auto;
+}
+
+#title-page .title-page__box .title-page__det {
+  text-align: center;
+  min-width: 40%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+/*# sourceMappingURL=title-page.css.map */

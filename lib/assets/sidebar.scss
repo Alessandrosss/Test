@@ -1,0 +1,25 @@
+.navbar-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    z-index: 99;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        column-gap: 3rem;
+        height: max-content;
+        li {
+            a {
+                color: var(--fontColor);
+            }
+        }
+    }
+}
+
+@media (max-width: 810px) {
+    .navbar-links {
+        display: none;
+    }
+}

@@ -1,0 +1,31 @@
+#title-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    padding: 2rem;
+    backdrop-filter: blur(8px);
+    .title-page__box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 3rem;
+        row-gap: 3rem;
+        padding: 6rem 0.5rem;
+        background-color: var(--background-glas);
+        border-radius: var(--radius);
+        .title-page__img {
+            width: clamp(350px, 500px, 100%);
+            height: auto;
+        }
+        .title-page__det {
+            text-align: center;
+            min-width: 40%;
+            height: max-content;
+        }
+    }
+}

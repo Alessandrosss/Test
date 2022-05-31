@@ -1,0 +1,42 @@
+#media-scroller {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2rem;
+    grid-auto-columns: 41%;
+    align-items: center;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline proximity;
+    h3 {
+        display: flex;
+        width: fit-content;
+        padding: .5rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    &>* {
+        scroll-snap-align: start;
+    }
+    .media-element {
+        display: grid;
+        grid-template-rows: min-content;
+        min-width: 200px;
+        gap: 1rem;
+        text-align: center;
+        padding: 1rem;
+        border-radius: var(--radius);
+        img {
+            object-fit: cover;
+            inline-size: 100%;
+            aspect-ratio: 16 / 9;
+        }
+    }
+    .media-element:hover {
+        background-color: var(--backgroundLighter);
+    }
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
